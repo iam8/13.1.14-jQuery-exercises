@@ -2,7 +2,7 @@
 // 11/7/22
 // 13.1.14: jQuery Exercises, PART TWO
 
-// Attach a 'submit' event handler to rating form
+/* Event handler for submitting the movie rating form. */
 $("#rating-form").on("submit", function (event) {
     event.preventDefault();
 
@@ -16,3 +16,7 @@ $("#rating-form").on("submit", function (event) {
     $("#movie-rating").val("");
 })
 
+/* Event handler for clicking the 'clear list' button for the movie list. */
+$("#clear-list").on("click", function () {
+    $("#movie-list").children().remove();
+})

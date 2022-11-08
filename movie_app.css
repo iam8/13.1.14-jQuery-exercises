@@ -54,13 +54,11 @@ input[type="submit"] {
 }
 
 #rating-form-container {
-    background-color: pink;
     width: 50%;
     margin-left: 15px;
 }
 
 #movie-list-container {
-    background-color: lightgreen;
     width: 50%;
     margin-right: 15px;
 }

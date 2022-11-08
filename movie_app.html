@@ -14,15 +14,21 @@
 <body>
     <h1>Movie Ratings</h1>
 
-    <form id="rating-form" action="">
-        <label for="movie-title">Title:</label>
-        <input id="movie-title" type="text" placeholder="E.x. 101 Dalmations">
+    <div id="form-list-container">
+        <form id="rating-form" action="">
+            <label for="movie-title">Title:</label>
+            <input id="movie-title" type="text" placeholder="E.x. 101 Dalmations">
 
-        <label for="movie-rating">Rating:</label>
-        <input id="movie-rating" type="number" min="0" max="10" placeholder="0-10">
+            <label for="movie-rating">Rating:</label>
+            <input id="movie-rating" type="number" min="0" max="10" placeholder="0-10">
 
-        <input type="submit" value="Submit">
-    </form>
+            <input type="submit" value="Submit">
+        </form>
+
+        <ul id="movie-list">
+            <li>Item 1</li>
+        </ul>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="movie_app.js"></script>

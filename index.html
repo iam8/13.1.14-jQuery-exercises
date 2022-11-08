@@ -102,13 +102,12 @@
 
     // 7) When changing the numbers in the 3 inputs at the bottom, the background color of the body should change to match the values of those 3 inputs
     const $rgbInputs = $("input.form-control"); // 3 items
-    $("div.row.mb-5").on("change", ".form-control", function () {
+    $rgbInputs.on("change", function () {
 
         const red = $rgbInputs.eq(0).val();
         const green = $rgbInputs.eq(2).val();
         const blue = $rgbInputs.eq(1).val();
 
-        console.log("rgb:", red, green, blue);
         $("body").css("background-color", `rgb(${red}, ${green}, ${blue})`);
     })
 

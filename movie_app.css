@@ -2,6 +2,12 @@
 /* 11/7/22 */
 /* 13.1.14: jQuery Exercises, PART TWO */
 
+body {
+    background-image: linear-gradient(aqua, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 h1 {
     color: darkblue;
     text-align: center;
@@ -23,18 +29,26 @@ input[type="text"] {
     width: 75%;
 }
 
-#form-list-container {
+#outer-container {
     background-color: lightblue;
     display: flex;
 }
 
+#rating-form-container {
+    background-color: blueviolet;
+    width: 50%;
+}
+
 #rating-form {
     background-color: lightgreen;
+}
+
+#movie-list-container {
+    background-color: coral;
     width: 50%;
 }
 
 #movie-list {
     background-color: pink;
-    width: 50%;
     list-style-type: square;
 }

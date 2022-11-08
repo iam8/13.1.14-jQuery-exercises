@@ -20,5 +20,21 @@ input {
 }
 
 input[type="text"] {
-    width: 33%;
+    width: 75%;
+}
+
+#form-list-container {
+    background-color: lightblue;
+    display: flex;
+}
+
+#rating-form {
+    background-color: lightgreen;
+    width: 50%;
+}
+
+#movie-list {
+    background-color: pink;
+    width: 50%;
+    list-style-type: square;
 }

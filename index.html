@@ -94,8 +94,11 @@
     $("#title").css("font-size", randSize);
 
     // 5) Add an item to the list
+    $("aside.col-sm-4 ol").append($("<li>Puppies are gorgeous.</li>"));
 
     // 6) Empty the aside and put a new paragraph inside it
+    $("aside.col-sm-4").children().remove();
+    $("aside.col-sm-4").append("<p>The list has been removed. Sincere apologies for the inconvenience (yeah, right).</p>");
 
     // 7) When changing the numbers in the 3 inputs at the bottom, the background color of the body should change to match the values of those 3 inputs
 

@@ -9,3 +9,16 @@ h1 {
     font-size: 50px;
 }
 
+label {
+    display: block;
+    margin-left: 15px;
+}
+
+input {
+    display: block;
+    margin: 0px 0px 15px 15px;
+}
+
+input[type="text"] {
+    width: 33%;
+}

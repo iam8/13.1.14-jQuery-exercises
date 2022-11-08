@@ -25,6 +25,14 @@ input {
     margin: 0px 0px 15px 15px;
 }
 
+li {
+    margin: 7px;
+}
+
+button {
+    padding: 2px 7px;
+}
+
 input[type="text"] {
     width: 75%;
 }
@@ -61,7 +69,6 @@ input[type="submit"] {
 }
 
 #movie-list {
-    background-color: pink;
     list-style-type: square;
 }
 

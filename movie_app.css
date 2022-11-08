@@ -15,14 +15,9 @@ h1 {
     font-size: 50px;
 }
 
-label {
-    display: block;
-    margin-left: 15px;
-}
-
 input {
     display: block;
-    margin: 0px 0px 15px 15px;
+    margin-bottom: 15px;
 }
 
 li {
@@ -54,22 +49,20 @@ input[type="submit"] {
 }
 
 #outer-container {
-    background-color: lightblue;
     display: flex;
+    justify-content: space-between;
 }
 
 #rating-form-container {
-    background-color: blueviolet;
+    background-color: pink;
     width: 50%;
-}
-
-#rating-form {
-    background-color: lightgreen;
+    margin-left: 15px;
 }
 
 #movie-list-container {
-    background-color: coral;
+    background-color: lightgreen;
     width: 50%;
+    margin-right: 15px;
 }
 
 #movie-list {

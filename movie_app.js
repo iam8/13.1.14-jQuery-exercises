@@ -9,9 +9,8 @@ $("#rating-form").on("submit", function(event) {
     const title = $("#movie-title").val();
     const rating = $("#movie-rating").val();
 
+    // Add movie rating info and delete button to list in DOM
     const $delBtn = $("<button class='del-button'>Delete</button>");
-
-    // Add movie rating info to list in DOM
     const $newEntry = $(`<li>Title: ${title}; Rating: ${rating}</li>`).append($delBtn);
     $("#movie-list").append($newEntry);
 

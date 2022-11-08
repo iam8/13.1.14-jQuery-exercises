@@ -6,12 +6,12 @@ body {
     background-image: linear-gradient(aqua, white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
     color: darkblue;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
 }
 
@@ -27,6 +27,18 @@ input {
 
 input[type="text"] {
     width: 75%;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.del-button {
+    background-color: orange;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
 }
 
 #outer-container {
@@ -51,4 +63,9 @@ input[type="text"] {
 #movie-list {
     background-color: pink;
     list-style-type: square;
+}
+
+#clear-list {
+    background-color: red;
+    font-weight: bold;
 }

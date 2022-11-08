@@ -29,6 +29,7 @@ li {
 button {
     padding: 2px 7px;
     font-size: 1em;
+    font-weight: bold;
 }
 
 input[type="text"] {
@@ -43,9 +44,12 @@ input[type="submit"] {
 
 .del-button {
     background-color: orange;
-    font-weight: bold;
     position: absolute;
     right: 30px;
+}
+
+.sort {
+    background-color: lightslategrey;
 }
 
 #outer-container {
@@ -69,5 +73,4 @@ input[type="submit"] {
 
 #clear-list {
     background-color: red;
-    font-weight: bold;
 }

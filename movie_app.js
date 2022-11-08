@@ -9,6 +9,12 @@ $("#rating-form").on("submit", function(event) {
     const title = $("#movie-title").val();
     const rating = $("#movie-rating").val();
 
+    // Validate input title length
+    if (title.length < 2) {
+        alert("Movie titles must be at least 2 characters long.");
+        return;
+    }
+
     // Add movie rating info and delete button to list in DOM
     const $delBtn = $("<button class='del-button'>Delete</button>");
     const $newEntry = $(`<li>Title: ${title}; Rating: ${rating}</li>`).append($delBtn);

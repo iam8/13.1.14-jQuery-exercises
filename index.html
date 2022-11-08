@@ -87,8 +87,11 @@
     $("article img").addClass("image-center");
 
     // 3) Remove the last paragraph in the article
+    $("article p").last().remove();
 
     // 4) Set the font size of the title to be a random pixel size from 0 to 100
+    const randSize = Math.random() * 100;
+    $("#title").css("font-size", randSize);
 
     // 5) Add an item to the list
 

@@ -1,3 +1,76 @@
-/* Ioana Alex Mititean -->
-/* 11/7/22 -->
-/* 13.1.14: jQuery Exercises, PART TWO -->
+/* Ioana Alex Mititean */
+/* 11/7/22 */
+/* 13.1.14: jQuery Exercises, PART TWO */
+
+body {
+    background-image: linear-gradient(aqua, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-size: 50px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 7px;
+    border-bottom: 1px solid grey;
+    width: 82%;
+}
+
+button {
+    padding: 2px 7px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 75%;
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.del-button {
+    background-color: orange;
+    position: absolute;
+    right: 30px;
+}
+
+.sort {
+    background-color: lightslategrey;
+}
+
+#outer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rating-form-container {
+    width: 50%;
+    margin-left: 15px;
+}
+
+#movie-list-container {
+    width: 50%;
+    margin-right: 15px;
+}
+
+#movie-list {
+    list-style-type: square;
+}
+
+#clear-list {
+    background-color: red;
+}

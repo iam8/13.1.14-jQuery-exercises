@@ -94,15 +94,17 @@
     $("#title").css("font-size", randSize);
 
     // 5) Add an item to the list
-    $("aside.col-sm-4 ol").append($("<li>Puppies are gorgeous.</li>"));
+    $("aside.col-sm-4 ol").append($("<li>", {text: "Puppies are gorgeous."}));
 
     // 6) Empty the aside and put a new paragraph inside it
-    $("aside.col-sm-4").children().remove();
-    $("aside.col-sm-4").append("<p>The list has been removed. Sincere apologies for the inconvenience (yeah, right).</p>");
+    $("aside.col-sm-4")
+        .empty()
+        .append($("<p>",
+                {text: "The list has been removed. Sincere apologies for the inconvenience (yeah, right)."}));
 
     // 7) When changing the numbers in the 3 inputs at the bottom, the background color of the body should change to match the values of those 3 inputs
     const $rgbInputs = $("input.form-control");
-    $rgbInputs.on("change", function () {
+    $rgbInputs.on("keyup change", function () {
 
         const red = $rgbInputs.eq(0).val();
         const green = $rgbInputs.eq(2).val();

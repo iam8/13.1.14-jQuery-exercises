@@ -17,11 +17,14 @@ $("#rating-form").on("submit", function(event) {
 
     // Add movie rating info and delete button to list in DOM
     const $delBtn = $("<button class='del-button'>Delete</button>");
-    const $newEntry = $(`<li title='${title}' rating='${rating}'>Title: ${title}; Rating: ${rating}</li>`).append($delBtn);
-    $("#movie-list").append($newEntry);
+    const $newEntry = $("<li>",
+                        {"data-title": title,
+                        "data-rating": rating,
+                        "text": `Title: ${title}; Rating: ${rating}`})
+                        .append($delBtn);
 
-    $("#movie-title").val("");
-    $("#movie-rating").val("");
+    $("#movie-list").append($newEntry);
+    $("#rating-form").trigger("reset");
 })
 
 /* Event handler for clicking the 'delete' button next to any list item. */
@@ -57,8 +60,8 @@ $("#clear-list").on("click", function() {
 
 /** Helper function: sort an array of tags by their 'title' attribute (ascending). */
 const sortByTitle = (tag1, tag2) => {
-    const title1 = tag1.getAttribute("title").toLowerCase();
-    const title2 = tag2.getAttribute("title").toLowerCase();
+    const title1 = tag1.dataset["title"].toLowerCase();
+    const title2 = tag2.dataset["title"].toLowerCase();
 
     if (title1 > title2) return 1;
     if (title1 < title2) return -1;
@@ -67,8 +70,8 @@ const sortByTitle = (tag1, tag2) => {
 
 /** Helper function: sort an array of tags by their 'rating' attribute (descending). */
 const sortByRating = (tag1, tag2) => {
-    const rating1 = tag1.getAttribute("rating");
-    const rating2 = tag2.getAttribute("rating");
+    const rating1 = tag1.dataset["rating"];
+    const rating2 = tag2.dataset["rating"];
 
     if (rating1 > rating2) return -1;
     if (rating1 < rating2) return 1;

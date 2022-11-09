@@ -104,7 +104,7 @@
 
     // 7) When changing the numbers in the 3 inputs at the bottom, the background color of the body should change to match the values of those 3 inputs
     const $rgbInputs = $("input.form-control");
-    $rgbInputs.on("keyup blur change", function () {
+    $rgbInputs.on("keyup change", function () {
 
         const red = $rgbInputs.eq(0).val();
         const green = $rgbInputs.eq(2).val();

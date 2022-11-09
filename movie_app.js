@@ -19,8 +19,8 @@ $("#rating-form").on("submit", function(event) {
     const $delBtn = $("<button class='del-button'>Delete</button>");
     const $newEntry = $("<li>",
                         {"data-title": title,
-                        "data-rating": rating,
-                        "text": `Title: ${title}; Rating: ${rating}`})
+                         "data-rating": rating,
+                         "text": `Title: ${title}; Rating: ${rating}`})
                         .append($delBtn);
 
     $("#movie-list").append($newEntry);
@@ -70,8 +70,8 @@ const sortByTitle = (tag1, tag2) => {
 
 /** Helper function: sort an array of tags by their 'rating' attribute (descending). */
 const sortByRating = (tag1, tag2) => {
-    const rating1 = tag1.dataset["rating"];
-    const rating2 = tag2.dataset["rating"];
+    const rating1 = +tag1.dataset["rating"];
+    const rating2 = +tag2.dataset["rating"];
 
     if (rating1 > rating2) return -1;
     if (rating1 < rating2) return 1;

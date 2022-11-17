@@ -77,3 +77,5 @@ const sortByRating = (tag1, tag2) => {
     if (rating1 < rating2) return 1;
     return 0;
 }
+
+// jQuery

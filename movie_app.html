@@ -17,15 +17,15 @@
     <div id="outer-container">
         <div id="rating-form-container">
             <h3>Add a Movie Rating</h3>
-            <form id="rating-form" action="">
-                <label for="movie-title">Title:</label>
-                <input id="movie-title" type="text" placeholder="E.x. 101 Dalmations" required>
+            <!-- <form id="rating-form" action=""> -->
+            <label for="movie-title">Title:</label>
+            <input id="movie-title" type="text" placeholder="E.x. 101 Dalmations" required>
 
-                <label for="movie-rating">Rating:</label>
-                <input id="movie-rating" type="number" min="0" max="10" placeholder="0-10" required>
+            <label for="movie-rating">Rating:</label>
+            <input id="movie-rating" type="number" min="0" max="10" placeholder="0-10" required>
 
-                <input type="submit" value="Submit">
-            </form>
+            <input type="submit" value="Submit">
+            <!-- </form> -->
         </div>
 
         <div id="movie-list-container">
@@ -42,5 +42,9 @@
 
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="movie_app.js"></script>
+
+    <script>
+        console.log(jQuery);
+    </script>
 </body>
 </html>
